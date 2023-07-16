@@ -11,6 +11,7 @@ install_dependencies() {
     done < "$distro/dependencies"
 
     if [[ ${#dependencies[@]} -gt 0 ]]; then
+        echo "==============================="
         echo "Installing dependencies for $distro..."
 
         if [[ $distro == "gentoo" ]]; then
