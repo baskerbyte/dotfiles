@@ -4,5 +4,3 @@ media-video/pipewire sound-server pipewire-alsa
 media-sound/pulseaudio -daemon
 gui-wm/hyprland X
 gui-libs/wlroots X
-dev-libs/weston Xwayland
-x11-wm/enlightenment Xwayland
