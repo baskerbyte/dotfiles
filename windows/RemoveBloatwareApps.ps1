@@ -1,0 +1,35 @@
+$Apps = @(
+    "Clipchamp.Clipchamp"
+    "Microsoft.BingNews"
+    "Microsoft.BingWeather"
+    "Microsoft.GetHelp"
+    "Microsoft.Getstarted"
+    "Microsoft.MicrosoftOfficeHub"
+    "Microsoft.MicrosoftSolitaireCollection"
+    "Microsoft.MicrosoftStickyNotes"
+    "Microsoft.OneDriveSync"
+    "Microsoft.Paint"
+    "Microsoft.People"
+    "Microsoft.PowerAutomateDesktop"
+    "Microsoft.Todos"
+    "Microsoft.Windows.NarratorQuickStart"
+    "Microsoft.Windows.ParentalControls"
+    "Microsoft.WindowsAlarms"
+    "Microsoft.WindowsCalculator"
+    "Microsoft.WindowsCamera"
+    "microsoft.windowscommunicationsapps"
+    "Microsoft.WindowsFeedbackHub"
+    "Microsoft.WindowsMaps"
+    "Microsoft.XboxGameCallableUI"
+    "Microsoft.XboxGameOverlay"
+    "Microsoft.XboxIdentityProvider"
+    "Microsoft.XboxSpeechToTextOverlay"
+    "Microsoft.YourPhone"
+    "MicrosoftCorporationII.QuickAssist"
+    "MicrosoftWindows.Client.WebExperience"
+    "Microsoft.Windows.DevHome"
+)
+
+foreach ($App in $Apps) {
+    Get-AppxPackage -AllUsers -Name "$AppxPackage" | Remove-AppxPackage -AllUsers
+}
