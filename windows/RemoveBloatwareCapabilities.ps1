@@ -6,6 +6,7 @@ $Capabilities = @(
     "Microsoft.Windows.WordPad*"
     "Print.Fax.Scan*" 
     "Print.Management.Console*" 
+    "Hello.Face*"
 )
 
 foreach ($Capability in $Capabilities) {

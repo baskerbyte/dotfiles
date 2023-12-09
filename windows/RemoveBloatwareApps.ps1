@@ -12,15 +12,12 @@ $Apps = @(
     "Microsoft.People"
     "Microsoft.PowerAutomateDesktop"
     "Microsoft.Todos"
-    "Microsoft.Windows.NarratorQuickStart"
-    "Microsoft.Windows.ParentalControls"
     "Microsoft.WindowsAlarms"
     "Microsoft.WindowsCalculator"
     "Microsoft.WindowsCamera"
     "microsoft.windowscommunicationsapps"
     "Microsoft.WindowsFeedbackHub"
     "Microsoft.WindowsMaps"
-    "Microsoft.XboxGameCallableUI"
     "Microsoft.XboxGameOverlay"
     "Microsoft.XboxIdentityProvider"
     "Microsoft.XboxSpeechToTextOverlay"
@@ -28,8 +25,10 @@ $Apps = @(
     "MicrosoftCorporationII.QuickAssist"
     "MicrosoftWindows.Client.WebExperience"
     "Microsoft.Windows.DevHome"
+    "Microsoft.OutlookForWindows"
+    "Microsoft.549981C3F5F10"
 )
 
 foreach ($App in $Apps) {
-    Get-AppxPackage -AllUsers -Name "$AppxPackage" | Remove-AppxPackage -AllUsers
+    Get-AppxPackage -AllUsers -Name "$App" | Remove-AppxPackage -AllUsers
 }
